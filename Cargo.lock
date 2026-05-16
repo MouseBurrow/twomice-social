@@ -265,6 +265,7 @@ dependencies = [
 [[package]]
 name = "config"
 version = "0.1.0"
+source = "git+https://github.com/MouseBurrow/twomice-libs.git#c24cfe810d5f17a585ad1d255e6e603782188cd3"
 dependencies = [
  "anyhow",
  "env_logger",
