@@ -22,10 +22,13 @@ async fn list_friends() -> axum::Json<serde_json::Value> {
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    server::serve("social", Router::new()
-        .route("/health", get(health))
-        .route("/friend-request", post(send_friend_request))
-        .route("/friend-accept", post(accept_friend_request))
-        .route("/friends", get(list_friends))
-    ).await
+    server::serve(
+        "social",
+        Router::new()
+            .route("/health", get(health))
+            .route("/friend-request", post(send_friend_request))
+            .route("/friend-accept", post(accept_friend_request))
+            .route("/friends", get(list_friends)),
+    )
+    .await
 }
