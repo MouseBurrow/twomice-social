@@ -285,7 +285,7 @@ dependencies = [
 [[package]]
 name = "config"
 version = "0.1.0"
-source = "git+https://github.com/MouseBurrow/twomice-libs.git?branch=main#78605748e9f3c77788e27d60da04a0223c8e51b9"
+source = "git+https://github.com/MouseBurrow/twomice-libs.git?branch=main#4983b725f5a01088885fda2a6b2a136c1886e005"
 dependencies = [
  "anyhow",
  "axum",
@@ -1332,9 +1332,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.149"
+version = "1.0.150"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "83fc039473c5595ace860d8c4fafa220ff474b3fc6bfdb4293327f1a37e94d86"
+checksum = "e8014e44b4736ed0538adeecded0fce2a272f22dc9578a7eb6b2d9993c74cfb9"
 dependencies = [
  "itoa",
  "memchr",
