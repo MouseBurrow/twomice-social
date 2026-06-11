@@ -285,7 +285,6 @@ dependencies = [
 [[package]]
 name = "config"
 version = "0.1.0"
-source = "git+https://github.com/MouseBurrow/twomice-libs.git?branch=main#4983b725f5a01088885fda2a6b2a136c1886e005"
 dependencies = [
  "anyhow",
  "axum",
@@ -378,6 +377,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "custom_headers"
+version = "0.1.0"
+source = "git+https://github.com/MouseBurrow/twomice-libs.git?branch=main#477efc0d07224b5efbb3456b57934cc057eb479d"
+dependencies = [
+ "axum",
+ "http",
+ "serde",
+ "serde_json",
+ "sqlx",
+]
+
+[[package]]
 name = "digest"
 version = "0.10.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -414,6 +425,20 @@ name = "dotenvy"
 version = "0.15.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1aaf95b3e5c8f23aa320147307562d361db0ae0d51242340f558153b4eb2439b"
+
+[[package]]
+name = "easy_errors"
+version = "0.1.0"
+source = "git+https://github.com/MouseBurrow/twomice-libs.git?branch=main#477efc0d07224b5efbb3456b57934cc057eb479d"
+dependencies = [
+ "axum",
+ "http",
+ "log",
+ "serde_json",
+ "sqlx",
+ "strum",
+ "strum_macros",
+]
 
 [[package]]
 name = "either"
@@ -1428,6 +1453,8 @@ dependencies = [
  "axum",
  "chrono",
  "config",
+ "custom_headers",
+ "easy_errors",
  "serde",
  "serde_json",
  "sqlx",
@@ -1650,6 +1677,27 @@ dependencies = [
  "unicode-bidi",
  "unicode-normalization",
  "unicode-properties",
+]
+
+[[package]]
+name = "strum"
+version = "0.27.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af23d6f6c1a224baef9d3f61e287d2761385a5b88fdab4eb4c6f11aeb54c4bcf"
+dependencies = [
+ "strum_macros",
+]
+
+[[package]]
+name = "strum_macros"
+version = "0.27.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7695ce3845ea4b33927c055a39dc438a45b059f7c1b3d91d38d10355fb8cbca7"
+dependencies = [
+ "heck",
+ "proc-macro2",
+ "quote",
+ "syn",
 ]
 
 [[package]]
